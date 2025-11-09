@@ -6,6 +6,9 @@ DELETE FROM app_versions;
 ALTER TABLE update_logs DROP CONSTRAINT update_logs_chk_1;
 SHOW CREATE TABLE update_logs;
 
+SELECT * FROM role;
+DELETE FROM role WHERE id = 2;
+
 SELECT * FROM update_logs;
 
 -- Insert sample data for app_versions table
